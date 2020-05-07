@@ -29,12 +29,14 @@
 		"compile": "tsc -p ./",
 		"lint": "tslint -p ./",
 		"watch": "tsc -watch -p ./",
-		"postinstall": "vscode-dts dev && vscode-dts master"
+		"download-api": "vscode-dts dev",
+		"postdownload-api": "vscode-dts master",
+		"postinstall": "npm run download-api"
 	},
 	"devDependencies": {
-		"@types/node": "^10.14.17",
-		"tslint": "^5.16.0",
-		"typescript": "^3.5.1",
+		"@types/node": "^12.12.0",
+		"tslint": "^5.19.0",
+		"typescript": "^3.8.3",
 		"vscode-dts": "^0.3.1"
 	}
 }
